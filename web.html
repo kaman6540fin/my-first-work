@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>端傳媒 Initium Media</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css">
+
+
+    <style>
+        .px-6 {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .text-in-pic {
+            top: 50%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-65 {
+            width: 65%;
+        }
+
+        .w-70 {
+            width: 70%;
+        }
+
+        .w-80 {
+            width: 85%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .container-fluid.mt-3 {
+                max-width: 1300px;
+            }
+
+            .container {}
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class=" container-fluid mt-3 mb-3 fixed-top">
+            <div class=" row mx-auto">
+                <div class=" menu-logo mr-4">
+                    <a class="logo" href="#">
+                        <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="fill">
+                            <path
+                                d="M28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56ZM28 1.47656C13.3515 1.47656 1.47656 13.3515 1.47656 28C1.47656 42.6485 13.3515 54.5234 28 54.5234C42.6485 54.5234 54.5234 42.6485 54.5234 28C54.5234 13.3515 42.6485 1.47656 28 1.47656Z">
+                            </path>
+                            <path
+                                d="M28.0765 6.69878C28.0765 8.02052 28.1316 9.03695 28.0765 10.4506C28.0658 10.7416 28.0518 10.9226 27.9387 11.0349C27.7747 11.1999 27.3348 11.1729 26.8391 11.1729C25.4417 11.1729 24.7165 11.1381 23.1564 11.1381C22.0138 11.1381 20.7266 11.1729 19.4751 11.1729C18.948 11.1729 18.5696 11.1663 18.4424 10.9667C18.3063 10.7524 18.3745 9.89209 18.3745 9.5556V5.90838C18.3745 5.62822 18.3454 5.33159 18.4078 5.21938C18.4498 5.1462 18.6365 5.06625 18.7527 5.04815H18.8208C19.1786 4.97596 19.7648 4.97891 19.9225 5.21938C20.0411 5.40181 19.9915 5.86945 19.9915 6.25226V8.45502C19.9915 8.79977 19.9311 9.34002 20.0257 9.48659C20.165 9.70452 21.3475 9.65256 21.8488 9.62473C21.9622 9.61718 22.0311 9.61078 22.1248 9.59011C22.2241 9.5673 22.3233 9.56419 22.3652 9.52115C22.5236 9.3561 22.4516 8.91931 22.4343 8.48941C22.3934 7.52697 22.4343 7.15477 22.4343 6.2178C22.4343 5.80169 22.3923 5.36397 22.5377 5.18607C22.7114 4.97033 23.6426 4.91323 23.8787 5.15041C24.1753 5.45032 23.993 6.74067 23.9822 7.28541C23.9782 7.53435 23.9822 8.03102 23.9822 8.4193C23.9822 8.81606 23.9228 9.3164 24.0514 9.48659C24.0933 9.54275 24.2043 9.56621 24.2918 9.59011C24.6184 9.67652 25.4289 9.64852 25.8754 9.62473C26.1136 9.61171 26.3183 9.60187 26.3905 9.52115C26.521 9.37568 26.4597 8.9442 26.4597 8.45502C26.4597 7.5892 26.4111 6.61582 26.4597 5.66699C26.4682 5.49664 26.4746 5.29495 26.4793 5.18749C26.4839 5.08484 26.5696 5.05887 26.661 5.0476C26.8419 5.02491 26.9791 5.01036 27.32 5.01353C27.4925 5.01555 27.6378 5.00691 27.7671 5.04815C27.876 5.08255 28.0097 5.15807 28.0433 5.21938C28.1608 5.44463 28.0765 6.24586 28.0765 6.69878ZM12.6965 26.4173C13.1825 26.4173 13.5018 26.2881 13.6256 26.6924C13.7132 26.9789 13.6957 27.6894 13.5223 27.862C13.2634 28.122 12.1262 27.9999 11.5612 27.9999H7.36363C6.91295 27.9999 5.63348 28.0932 5.43721 27.862C5.33363 27.7402 5.38635 27.0833 5.3834 26.7316C5.38291 26.6818 5.38635 26.5995 5.43623 26.5381C5.48397 26.4788 5.52307 26.4543 5.59159 26.4385C5.72126 26.4082 6.03101 26.4226 6.26173 26.4173C6.47294 26.412 6.70596 26.4325 6.91623 26.3483C6.94205 26.3375 7.05858 26.273 7.05405 26.2792C7.13695 26.1597 7.11458 25.544 7.12323 25.2121C7.17698 22.9255 7.12323 20.7714 7.12323 18.3993C7.12323 18.0456 7.16933 17.4657 7.05405 17.3334C6.84066 17.0863 5.75943 17.3751 5.50601 17.1248C5.39603 17.0194 5.39948 16.8005 5.40243 16.5073C5.40352 16.3242 5.37022 16.1256 5.43721 15.991C5.44345 15.9748 5.46193 15.9446 5.46816 15.9315C5.47363 15.9166 5.49425 15.8992 5.50601 15.8874C5.69375 15.6741 6.67162 15.7493 7.22565 15.7493H12.7998C12.8227 15.7493 12.8451 15.7503 12.8691 15.7493C12.9996 15.7429 13.4278 15.7136 13.5156 15.8309C13.5592 15.8889 13.575 15.9091 13.5913 15.9565C13.6992 16.2669 13.6968 17.0582 13.4535 17.1951C13.3013 17.2803 12.9917 17.2254 12.7309 17.2296C12.4947 17.2328 12.1792 17.194 12.0431 17.2975C11.8168 17.47 11.9051 18.4898 11.9051 19.1907C11.9051 21.221 11.8651 23.2747 11.9397 25.1431C11.9538 25.4923 11.872 26.0993 12.0087 26.2792C12.1304 26.44 12.4098 26.4173 12.6965 26.4173ZM10.2872 17.3334C10.1329 17.176 9.17728 17.2533 8.99802 17.2587C8.90762 17.2593 8.80765 17.2705 8.77243 17.3026C8.73021 17.3415 8.70205 17.3908 8.68439 17.4845C8.66683 17.6986 8.67126 18.0222 8.67126 18.296V21.8061C8.67126 23.1864 8.66574 24.0057 8.70473 25.2811C8.72179 25.792 8.67345 26.2318 8.80809 26.3483C8.97078 26.4874 10.1179 26.4788 10.2872 26.2792C10.4145 26.1306 10.3918 25.6627 10.3918 25.2465V19.5347C10.3918 19.0798 10.5112 17.5566 10.2872 17.3334ZM9.46095 11.4297C7.61858 11.4297 6.12502 9.93612 6.12502 8.09375C6.12502 6.25138 7.61858 4.75781 9.46095 4.75781C11.3033 4.75781 12.7969 6.25138 12.7969 8.09375C12.7969 9.93612 11.3033 11.4297 9.46095 11.4297ZM18.4078 21.1519C18.4078 20.4965 18.3398 19.526 18.6639 19.1334C18.8344 18.9271 19.1932 18.99 20.5068 18.9837C20.9045 18.982 21.4407 18.9871 21.8939 18.99C22.0567 18.9909 22.2845 18.9815 22.3652 18.9149C22.5161 18.792 22.555 18.0382 22.5032 17.6427C22.4516 17.2569 22.3802 17.2524 21.9522 17.2296C21.518 17.2061 20.8603 17.2296 20.4386 17.2296C19.7435 17.2296 18.7637 17.3539 18.5114 17.1248C18.3863 17.013 18.3961 16.7819 18.4078 16.4717C18.4144 16.3274 18.3809 16.1624 18.4078 16.0588C18.4108 16.0493 18.5416 15.8432 18.5802 15.8184C18.7452 15.7084 19.2001 15.7493 19.6464 15.7493H26.3905C26.7895 15.7493 27.1486 15.6977 27.5269 15.7148C27.5692 15.7171 27.7564 15.6741 27.8706 15.7493C28.1251 15.9177 28.1897 16.9557 27.9052 17.1607C27.6994 17.3073 27.2454 17.2296 26.976 17.2296C26.0853 17.2296 25.4871 17.2007 24.5329 17.2296C24.1236 17.2415 24.0016 17.2351 23.9478 17.608C23.9015 17.9197 23.907 18.7369 24.0514 18.8814C24.2561 19.0862 25.5497 18.9837 25.9789 18.9837C26.2827 18.9837 26.6256 18.9901 26.976 18.9837C27.1268 18.9815 27.3455 18.9773 27.4584 18.9773C28.0773 18.9784 28.0452 19.2642 28.0452 20.0446C28.0452 22.2862 28.0765 24.561 28.0765 26.7949C28.0765 27.2424 28.0839 27.7757 28.0016 27.8779C27.932 27.9644 27.7623 27.9979 27.5654 28.009V28.0093L27.5594 28.0095C27.4816 28.0136 27.4 28.0142 27.3184 28.0132L27.2526 28.0143C26.9372 28.0143 26.8689 28.0021 26.762 27.9542C26.7004 27.9267 26.6527 27.8917 26.6294 27.8141C26.6068 27.739 26.5943 27.6939 26.5843 27.5588C26.5721 27.394 26.5674 26.6102 26.5638 26.1843C26.5493 24.4874 26.5737 23.192 26.5582 21.3848C26.556 21.1403 26.5685 20.9101 26.5168 20.7132C26.456 20.4818 26.2115 20.4568 25.9975 20.4541C25.9699 20.4551 25.9411 20.4557 25.9104 20.4555C25.677 20.4539 25.483 20.4679 25.3917 20.5628C25.2451 20.7154 25.2898 22.0414 25.2898 22.3906C25.2898 23.4397 25.3183 25.4643 25.3183 26.5586C25.3183 27.1503 25.3418 27.7224 25.2568 27.8662C25.1995 27.9627 25.0488 27.9689 24.5325 27.9658L24.5324 27.9642C24.0759 27.9649 24.009 27.9727 23.9261 27.8568C23.8309 27.7244 23.8205 27.3731 23.8211 27.0043C23.8245 25.1302 23.8269 23.4295 23.8149 21.4652C23.8128 21.1268 23.8502 20.7212 23.776 20.604C23.685 20.4629 22.7952 20.4224 22.6882 20.5941C22.6081 20.7373 22.6085 20.921 22.6055 22.287C22.6019 23.9535 22.587 25.3101 22.6055 27.0373C22.61 27.3598 22.6382 27.6625 22.5066 27.8363C22.3882 27.9922 22.112 27.9668 21.8142 27.9657C21.464 27.9631 21.3059 27.9547 21.2034 27.7997C21.102 27.6464 21.1385 27.3424 21.1385 26.9277C21.1385 26.0043 21.1285 25.099 21.1305 24.1742C21.1321 23.4965 21.1266 22.9276 21.1266 22.287C21.1266 21.1223 21.1438 20.7769 21.0295 20.5835C20.9565 20.4602 20.8183 20.4486 20.2318 20.464C20.0061 20.4698 19.964 20.5322 19.9638 20.7125C19.9627 21.843 19.9649 23.166 19.9649 24.2839C19.9649 25.0849 19.9466 26.201 19.9649 27.0922C19.9677 27.3008 19.9724 27.5659 19.8958 27.7471C19.776 28.0306 19.1623 28.0863 18.7182 27.9657C18.6396 27.9439 18.4949 27.8996 18.4424 27.8277C18.3333 27.6746 18.3738 27.1939 18.3745 26.7612C18.3767 24.7951 18.4089 23.1839 18.4078 21.1519Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="menu-text">
+                    <div class="link">
+                        <div class="link-up border-bottom border-light  pb-2 ">
+                            <a class="index mr-4 text-light" href="">首頁</a>
+                            <a class="follow text-light" href="">追蹤</a>
+                        </div>
+                        <div class="link-down d-flex pt-2">
+                            <div class="link-down-right">
+                                <span class="squre mr-4">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" class="fill"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.5 1.5H4.5V4.5H1.5V1.5ZM1.5 6.5H4.5V9.5H1.5V6.5ZM4.5 11.5H1.5V14.5H4.5V11.5ZM6.5 1.5H9.5V4.5H6.5V1.5ZM9.5 6.5H6.5V9.5H9.5V6.5ZM6.5 11.5H9.5V14.5H6.5V11.5ZM14.5 1.5H11.5V4.5H14.5V1.5ZM11.5 6.5H14.5V9.5H11.5V6.5ZM14.5 11.5H11.5V14.5H14.5V11.5Z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <a class="mr-4 text-light" href="">最新</a>
+                                <a class="mr-4 text-light" href="">國際</a>
+                                <a class="mr-4 text-light" href="">大陸</a>
+                                <a class="mr-4 text-light" href="">香港</a>
+                                <a class="mr-4 text-light" href="">台灣</a>
+                                <a class="mr-4 text-light" href="">評論</a>
+                                <a class="mr-4 text-light" href="">科技</a>
+                                <a class="mr-4 text-light" href="">風物</a>
+                                <a class="mr-4 text-light" href="">圓桌</a>
+                                <a class="text-light" href="">廣場</a>
+                            </div>
+                            <div class="link-down-left border-left border-light ml-4 pl-4 ">
+                                <a class="mr-4 text-light" href="">第87屆金罵獎</a>
+                                <a class="text-light" href="">2020川普輸了</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-left d-flex ml-4 align-items-baseline">
+                    <div class="name">
+                        <span class="text-light">端傳媒</span>
+                    </div>
+                    <div class="button ml-3">
+                        <a class="btn btn btn-info" href="">付費支持</a>
+                    </div>
+                    <div class="search ml-3">
+                        <h4>
+                            <a href="">
+                                <i class="fas fa-search text-light"></i>
+                            </a>
+                        </h4>
+
+                    </div>
+                    <div class="bell ml-3">
+                        <h4>
+                            <a href="">
+                                <i class="far fa-bell text-light"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="member ml-3">
+                        <h4>
+                            <a href="">
+                                <i class="far fa-user text-light"></i>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main index">
+        <div class="pic">
+            <div class="img vh-100 overflow-hidden  position-relative">
+                <a href="">
+                    <figure>
+                        <img class="img-fluid"
+                            src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a5573c089ea04de6946dd04494be9f9b.jpg">
+                    </figure>
+                </a>
+            </div>
+            <div class="text-in-pic container-fluid position-absolute ">
+                <div class="container text-light text-center ">
+                    <div class="w-60 mx-auto">
+                        <h1>中天新聞關台倒數：一則關於「媒體倫理」與「新聞自由」界線的後真相備忘錄</h1>
+                        <div class="w-85 mx-auto">
+                            <p class="h6">旺旺集團旗下的中天電視確定在12月走上「關台」命運，台灣相關單位真的在傷害新聞自由嗎？抑或是在維護良善的閱聽環境？</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="container-fluid px-0 mx-0">
+                <div class="row mt-1 w-100 mx-0">
+                    <div class="col-lg-4 col-md-6 pl-0">
+                        <div class="img-wrap w-100 position-relative" style="height: 270px;">
+                            <img class="w-100 h-100" style="object-fit: cover;"
+                                src="
+                            https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/3ebca519004a4a5dbc12c5900a2df3a9.jpg" alt="">
+                        </div>
+                        <div class="head position-absolute text-light  "
+                            style="top: 5%; left: 5%; border-top:3px solid white;">
+                            <p>評論</p>
+                        </div>
+                        <div class="body position-absolute text-light" style="bottom: 5%; left: 5%;">
+                            <h3>多邊自貿協定RCEP，對中共的地緣政治價值</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 pl-0">
+                        <div class="img-wrap w-100" style="height: 270px;">
+                            <img class=" w-100 h-100" style="object-fit: cover;"
+                                src="
+                                https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/cff66fbe3ea843fdb6b6f1550f9b00de.jpg"" alt="">
+                        </div>
+                        <div class=" head position-absolute text-light "
+                            style=" top: 5%; left: 5%; border-top:3px solid white;">
+                            <p>第57屆金馬獎</p>
+                        </div>
+                        <div class="body position-absolute text-light" style="bottom: 5%; left: 5%;">
+                            <h3>評《同學麥娜絲》：如果人生到了某個不上不下的階段</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 pr-0 pl-0">
+                        <div class="img-wrap w-100" style="height: 270px;">
+                            <img class=" w-100 h-100" style="object-fit: cover;"
+                                src="
+                                    https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a619ba932d154aa298ad25b913dec056.jpg" alt="">
+                        </div>
+                        <div class="head position-absolute text-light "
+                            style="top: 5%; left: 5%; border-top:3px solid white;">
+                            <p>即時</p>
+                        </div>
+                        <div class="body position-absolute text-light" style="bottom: 5%; left: 5%;">
+                            <h3>早報：美國德州邊境疫情吿急，紐約關閉學校，拜登敦促特朗普配合權力過渡</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 px-0 ">
+                        <div class="py-5 mr-4 d-flex justify-content-between"
+                            style="border-top:1px solid rgb(185, 185, 185);">
+                            <div class="text-third w-65">
+                                <div style="width: 32px; border-top:2px solid rgb(185, 185, 185);">
+                                    <p>台灣</p>
+                                </div>
+                                <div>
+                                    <h5><strong>中天新聞關台倒數：一則關於「媒體倫理」與「新聞自由」界線的後真相備忘錄</strong></h5>
+                                </div>
+                            </div>
+                            <div style="width: 150px; height: 150px;">
+                                <img class=" w-100 h-100" style="object-fit: cover;"
+                                    src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a5573c089ea04de6946dd04494be9f9b.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 px-0 ">
+                        <div class="py-5 mr-4 d-flex justify-content-between"
+                            style="border-top:1px solid rgb(185, 185, 185);">
+                            <div class="text-third w-65">
+                                <div style="width: 32px; border-top:2px solid rgb(185, 185, 185);">
+                                    <p>台灣</p>
+                                </div>
+                                <div>
+                                    <h5><strong>中天新聞關台倒數：一則關於「媒體倫理」與「新聞自由」界線的後真相備忘錄</strong></h5>
+                                </div>
+                            </div>
+                            <div style="width: 150px; height: 150px;">
+                                <img class=" w-100 h-100" style="object-fit: cover;"
+                                    src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a5573c089ea04de6946dd04494be9f9b.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 px-0 ">
+                        <div class="py-5 mr-4 d-flex justify-content-between"
+                            style="border-top:1px solid rgb(185, 185, 185);">
+                            <div class="text-third w-65">
+                                <div style="width: 32px; border-top:2px solid rgb(185, 185, 185);">
+                                    <p>台灣</p>
+                                </div>
+                                <div>
+                                    <h5><strong>中天新聞關台倒數：一則關於「媒體倫理」與「新聞自由」界線的後真相備忘錄</strong></h5>
+                                </div>
+                            </div>
+                            <div style="width: 150px; height: 150px;">
+                                <img class=" w-100 h-100" style="object-fit: cover;"
+                                    src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a5573c089ea04de6946dd04494be9f9b.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 px-0 ">
+                        <div class="py-5 mr-4 d-flex justify-content-between"
+                            style="border-top:1px solid rgb(185, 185, 185);">
+                            <div class="text-third w-65">
+                                <div style="width: 32px; border-top:2px solid rgb(185, 185, 185);">
+                                    <p>台灣</p>
+                                </div>
+                                <div>
+                                    <h5><strong>中天新聞關台倒數：一則關於「媒體倫理」與「新聞自由」界線的後真相備忘錄</strong></h5>
+                                </div>
+                            </div>
+                            <div style="width: 150px; height: 150px;">
+                                <img class=" w-100 h-100" style="object-fit: cover;"
+                                    src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2020/11/a5573c089ea04de6946dd04494be9f9b.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
